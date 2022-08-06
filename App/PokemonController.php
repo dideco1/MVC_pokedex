@@ -47,5 +47,25 @@ class PokemonController
 
         header("Location: /pokemon");
     }
+    public static function detalhe()
+    {
+        $model = new PokemonModel();
+
+        if(isset($_GET['id']))
+        {
+            $model = $model->getById( (int) $_GET['id']);
+        }
+        $id = $model->id;
+        $nome = $model->nome;
+        $elemento = $model->elemento_dominante;
+        $descricao = $model->descricao;
+        $altura = $model->altura;
+        $peso = $model->peso;
+        $genero = $model->genero;
+        $fraqueza = $model->fraqueza_principal;
+        $evolucoes = $model->evolucoes;
+
+        include 'Detalhe.php';
+    }
 
 }

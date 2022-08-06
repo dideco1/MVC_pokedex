@@ -10,7 +10,7 @@
         display: inline-block;
     }
     input{
-        width:239px;
+        width:250px;
     }
     .botao{
         position:absolute;

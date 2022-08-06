@@ -18,8 +18,7 @@ switch($uri_parse)
     break;
 
     case '/pokemon/detalhe':
-        echo("fazer detalhes pegando da model oq foi dado pelo usuario e organizando
-             de forma bonita aq");
+        PokemonController::detalhe();
     break;
 
     default:
