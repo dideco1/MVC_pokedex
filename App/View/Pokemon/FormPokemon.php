@@ -12,9 +12,21 @@
     input{
         width:250px;
     }
-    .botao{
+    .botao_lista_pokemon{
         position:absolute;
         top: 0px;
+        background-color: red;
+    }
+    .botao_cadastrar_elemento{
+        position:absolute;
+        top: 0px;
+        left: 180px;
+        background-color: red;
+    }
+    .botao_lista_elemento{
+        position:absolute;
+        top: 0px;
+        left: 347px;
         background-color: red;
     }
 
@@ -33,8 +45,8 @@
             <input name="nome" id="nome" value="<?= $model->nome ?>" type="text" />
             <br>
 
-            <label for="elemento_dominante">Principal elemento:</label>
-            <input name="elemento_dominante" id="elemento_dominante" value="<?= $model->elemento_dominante ?>" type="text" />
+            <label for="id_elementos">Id elemento(s):</label>
+            <input name="id_elementos" id="id_elementos" value="<?= $model->id_elementos ?>" type="text" />
             <br>
 
             <label for="descricao">Descrição:</label>
@@ -53,8 +65,8 @@
             <input name="genero" id="genero" value="<?= $model->genero ?>" type="text" />
             <br>
 
-            <label for="fraqueza_principal">Principal Fraqueza:</label>
-            <input name="fraqueza_principal" id="fraqueza_principal" value="<?= $model->fraqueza_principal ?>" type="text" />
+            <label for="fraqueza">Id da Fraqueza (elemento):</label>
+            <input name="fraqueza" id="fraqueza" value="<?= $model->fraqueza ?>" type="text" />
             <br>
 
             <label for="evolucoes">Evoluções:</label>
@@ -68,7 +80,13 @@
     </form>    
     </center>
     <a href="/pokemon">
-        <button class="botao"> Ver Lista </button>
+        <button class="botao_lista_pokemon"> Ver Lista de Pokemon </button>
+    </a>
+    <a href="/elemento/cadastro">
+        <button class="botao_cadastrar_elemento"> Cadastrar Elemento </button>
+    </a>
+    <a href="/elemento">
+        <button class="botao_lista_elemento"> Ver Lista de Elemento </button>
     </a>
 </body>
 </html>

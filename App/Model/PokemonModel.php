@@ -1,10 +1,10 @@
 <?php
-include 'PokemonDAO.php';
+include 'DAO/PokemonDAO.php';
 
 class PokemonModel
 {
-    public $id, $nome, $elemento_dominante, $descricao, $altura;
-    public $peso, $genero, $fraqueza_principal, $evolucoes, $rows;
+    public $id, $nome, $id_elementos, $descricao, $altura;
+    public $peso, $genero, $fraqueza, $evolucoes, $rows;
 
     public function save()
     {
@@ -31,7 +31,6 @@ class PokemonModel
 
         $dao = new PokemonDAO();
         $obj = $dao->selectById($id);
-
         return ($obj) ? $obj : new PokemonModel();
     }
     public function delete(int $id)

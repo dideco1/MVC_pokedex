@@ -32,11 +32,7 @@
         </fieldset>
         <br>
         <a href="/pokemon">
-            <button class="botao">Ver Lista</button>
-        </a>
-        &nbsp &nbsp &nbsp &nbsp
-        <a href="/">
-            <button class="botao"> Voltar ao Registro </button>
+            <button class="botao">Voltar</button>
         </a>
     </center>
     

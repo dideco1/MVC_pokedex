@@ -1,5 +1,5 @@
 <?php
-include 'PokemonModel.php';
+include 'Model/PokemonModel.php';
 
 class PokemonController
 {
@@ -8,7 +8,7 @@ class PokemonController
         $model = new PokemonModel();
         $model->getAllRows();
 
-        include 'ListaPokemon.php';
+        include 'View/Pokemon/ListaPokemon.php';
     }
     public static function form()
     {
@@ -20,18 +20,18 @@ class PokemonController
             $model = $model->getById( (int) $_GET['id']);
         }
         
-        include 'FormPokemon.php';
+        include 'View/Pokemon/FormPokemon.php';
     }
     public static function save() {
         $pokemon = new PokemonModel();
         $pokemon->id = $_POST['id'];
         $pokemon->nome = $_POST['nome'];
-        $pokemon->elemento_dominante = $_POST['elemento_dominante'];
+        $pokemon->id_elementos = $_POST['id_elementos'];
         $pokemon->descricao = $_POST['descricao'];
         $pokemon->altura = $_POST['altura'];
         $pokemon->peso = $_POST['peso'];
         $pokemon->genero = $_POST['genero'];
-        $pokemon->fraqueza_principal = $_POST['fraqueza_principal'];
+        $pokemon->fraqueza = $_POST['fraqueza'];
         $pokemon->evolucoes = $_POST['evolucoes'];
 
         $pokemon->save();
@@ -57,15 +57,15 @@ class PokemonController
         }
         $id = $model->id;
         $nome = $model->nome;
-        $elemento = $model->elemento_dominante;
+        $elemento = $model->id_elementos;
         $descricao = $model->descricao;
         $altura = $model->altura;
         $peso = $model->peso;
         $genero = $model->genero;
-        $fraqueza = $model->fraqueza_principal;
+        $fraqueza = $model->fraqueza;
         $evolucoes = $model->evolucoes;
 
-        include 'Detalhe.php';
+        include 'View/Pokemon/Detalhe.php';
     }
 
 }

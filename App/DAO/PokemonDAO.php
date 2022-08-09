@@ -6,9 +6,9 @@ class PokemonDAO
 
     function __construct() 
     {
-        $dsn = "mysql:host=localhost:3306;dbname=Pokedex";
+        $dsn = "mysql:host=localhost:3307;dbname=Pokedex";
         
-        $this->conexao = new PDO($dsn, 'root', '1234');
+        $this->conexao = new PDO($dsn, 'root', 'etecjau');
     }
     function insert(PokemonModel $model) 
     {
@@ -18,12 +18,12 @@ class PokemonDAO
         $stmt = $this->conexao->prepare($sql);
 
         $stmt->bindValue(1, $model->nome);
-        $stmt->bindValue(2, $model->elemento_dominante);
+        $stmt->bindValue(2, $model->id_elementos);
         $stmt->bindValue(3, $model->descricao);
         $stmt->bindValue(4, $model->altura);
         $stmt->bindValue(5, $model->peso);
         $stmt->bindValue(6, $model->genero);
-        $stmt->bindValue(7, $model->fraqueza_principal);
+        $stmt->bindValue(7, $model->fraqueza);
         $stmt->bindValue(8, $model->evolucoes);
         
 
@@ -40,18 +40,18 @@ class PokemonDAO
     }
     public function update(PokemonModel $model)
     {
-        $sql = "UPDATE Pokemon SET nome=?, elemento_dominante=?, descricao=?, 
-        altura=?, peso=?, genero=?, fraqueza_principal=?, evolucoes=? WHERE id=? ";
+        $sql = "UPDATE Pokemon SET nome=?, id_elementos=?, descricao=?, 
+        altura=?, peso=?, genero=?, id_elemento_fraqueza=?, evolucoes=? WHERE id=? ";
 
         $stmt = $this->conexao->prepare($sql);
 
         $stmt->bindValue(1, $model->nome);
-        $stmt->bindValue(2, $model->elemento_dominante);
+        $stmt->bindValue(2, $model->id_elementos);
         $stmt->bindValue(3, $model->descricao);
         $stmt->bindValue(4, $model->altura);
         $stmt->bindValue(5, $model->peso);
         $stmt->bindValue(6, $model->genero);
-        $stmt->bindValue(7, $model->fraqueza_principal);
+        $stmt->bindValue(7, $model->fraqueza);
         $stmt->bindValue(8, $model->evolucoes);
         $stmt->bindValue(9, $model->id);
 
