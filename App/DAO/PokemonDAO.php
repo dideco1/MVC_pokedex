@@ -13,7 +13,7 @@ class PokemonDAO
     function insert(PokemonModel $model) 
     {
         $sql = "INSERT INTO Pokemon 
-                (nome, elemento_dominante, descricao, altura, peso, genero, fraqueza_principal, evolucoes) 
+                (nome, id_elementos, descricao, altura, peso, genero, id_elemento_fraqueza, evolucoes) 
                 VALUES (?, ?, ?, ?, ?, ?, ?, ?)";
         $stmt = $this->conexao->prepare($sql);
 
