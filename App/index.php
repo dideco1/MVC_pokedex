@@ -38,10 +38,6 @@ switch($uri_parse)
         ElementoController::delete();
     break;
 
-    case '/elemento/detalhe':
-        ElementoController::detalhe();
-    break;
-
     default:
         PokemonController::form();
     break;
