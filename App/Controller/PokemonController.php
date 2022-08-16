@@ -62,7 +62,7 @@ class PokemonController
         $altura = $model->altura;
         $peso = $model->peso;
         $genero = $model->genero;
-        $fraqueza = $model->fraqueza;
+        $fraqueza = $model->id_elemento_fraqueza;
         $evolucoes = $model->evolucoes;
 
         include 'View/Pokemon/Detalhe.php';

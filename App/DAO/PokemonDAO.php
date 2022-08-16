@@ -23,7 +23,7 @@ class PokemonDAO
         $stmt->bindValue(4, $model->altura);
         $stmt->bindValue(5, $model->peso);
         $stmt->bindValue(6, $model->genero);
-        $stmt->bindValue(7, $model->fraqueza);
+        $stmt->bindValue(7, $model->id_elemento_fraqueza);
         $stmt->bindValue(8, $model->evolucoes);
         
 
@@ -51,7 +51,7 @@ class PokemonDAO
         $stmt->bindValue(4, $model->altura);
         $stmt->bindValue(5, $model->peso);
         $stmt->bindValue(6, $model->genero);
-        $stmt->bindValue(7, $model->fraqueza);
+        $stmt->bindValue(7, $model->id_elemento_fraqueza);
         $stmt->bindValue(8, $model->evolucoes);
         $stmt->bindValue(9, $model->id);
 

@@ -4,7 +4,7 @@ include 'DAO/PokemonDAO.php';
 class PokemonModel
 {
     public $id, $nome, $id_elementos, $descricao, $altura;
-    public $peso, $genero, $fraqueza, $evolucoes, $rows;
+    public $peso, $genero, $id_elemento_fraqueza, $evolucoes, $rows;
 
     public function save()
     {

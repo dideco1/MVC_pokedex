@@ -73,8 +73,8 @@
             <input name="genero" id="genero" value="<?= $model->genero ?>" type="text" />
             <br>
 
-            <label for="fraqueza">Id da Fraqueza (elemento):</label>
-            <input name="fraqueza" id="fraqueza" value="<?= $model->fraqueza ?>" type="text" />
+            <label for="id_elemento_fraqueza">Id da Fraqueza (elemento):</label>
+            <input name="id_elemento_fraqueza" id="id_elemento_fraqueza" value="<?= $model->id_elemento_fraqueza ?>" type="text" />
             <br>
 
             <label for="evolucoes">Evoluções:</label>
