@@ -5,6 +5,24 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">  
     <title>Pokedex</title>
     <style>
+    body{
+        background-color: grey;
+    }
+    table{
+        border-color: black;
+        font-size: 16px;
+    }
+    th{
+        color: blue;
+        text-align: center;
+    }
+    td{
+        text-align: center;
+    }
+    legend{
+        font-size: 40px;
+        color: darkblue;
+    }
     .botao_cadastrar_pokemon{
         position:absolute;
         top: 0px;

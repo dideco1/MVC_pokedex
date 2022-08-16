@@ -5,9 +5,17 @@
     <title>Registro de Pokemons</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <style>
+    body{
+        background-color: grey;
+    }
+    h1{
+        color: darkblue;
+    }
     label{
         width:230px;
+        font-size: 18px;
         display: inline-block;
+        color: blue;
     }
     input{
         width:250px;

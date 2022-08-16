@@ -6,6 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Detalhes <?php echo"$nome" ?> </title>
     <style>
+        body{
+            background-color: grey;
+        }
+        b{
+            color: darkblue;
+        }
+
         fieldset
         {
             border-radius:10%;
@@ -27,7 +34,7 @@
             <label> <b>Gênero:</b> <?php echo"$genero" ?> </label> <br> <br>
             <label> <b>Principal Fraqueza:</b> <?php echo"$fraqueza" ?> </label> <br> <br>
             <label> <b>Evoluções:</b> <?php echo"$evolucoes" ?> </label> <br> <br>
-            <label> <b> Descrição: </b> <br>
+            <label> <b> Descrição: </b>
             <label> <?php echo"$descricao" ?> </label> <br> <br>
         </fieldset>
         <br>
