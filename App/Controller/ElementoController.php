@@ -1,5 +1,9 @@
 <?php
+namespace App\Controller;
+
 include 'Model/ElementoModel.php';
+
+use App\Model\ElementoModel;
 
 class ElementoController
 {

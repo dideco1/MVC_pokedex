@@ -1,5 +1,9 @@
 <?php
+namespace App\Controller;
+
 include 'Model/PokemonModel.php';
+
+use App\Model\PokemonModel;
 
 class PokemonController
 {

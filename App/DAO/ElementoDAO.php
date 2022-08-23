@@ -1,5 +1,10 @@
 <?php
 
+namespace App\DAO;
+
+use App\Model\ElementoModel;
+use \PDO;
+
 class ElementoDAO
 {
     private $conexao;

@@ -2,6 +2,11 @@
 include 'Controller/PokemonController.php';
 include 'Controller/ElementoController.php';
 
+use App\Controller\{
+    ElementoController,
+    PokemonController
+};
+
 $uri_parse = parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH);
 
 switch($uri_parse)

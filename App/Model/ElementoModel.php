@@ -1,5 +1,9 @@
 <?php
+namespace App\Model;
+
 include 'DAO/ElementoDAO.php';
+
+use App\DAO\ElementoDAO;
 
 class ElementoModel
 {

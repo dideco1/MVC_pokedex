@@ -1,5 +1,10 @@
 <?php
 
+namespace App\DAO;
+
+use App\Model\PokemonModel;
+use \PDO;
+
 class PokemonDAO
 {
     private $conexao;

@@ -1,5 +1,9 @@
 <?php
+namespace App\Model;
+
 include 'DAO/PokemonDAO.php';
+
+use App\DAO\PokemonDAO;
 
 class PokemonModel
 {
