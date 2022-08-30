@@ -42,6 +42,10 @@
 </head>
 <body>
     <center>
+    <?php if(count($model_elemento->rows) == 0): ?>
+        <br>
+        <h1> Não é possível registrar um pokémon sem ao menos um elemento cadastrado </h1>
+    <?php else: ?>
     <form action="/pokemon/save" method="post">
         <fieldset>
             
@@ -85,7 +89,8 @@
             <button type="submit">Enviar</button>
 
         </fieldset>
-    </form>    
+    </form>   
+    <?php endif ?> 
     </center>
     <a href="/pokemon">
         <button class="botao_lista_pokemon"> Ver Lista de Pokemon </button>

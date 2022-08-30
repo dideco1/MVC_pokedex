@@ -4,6 +4,7 @@ namespace App\Controller;
 include 'Model/PokemonModel.php';
 
 use App\Model\PokemonModel;
+use App\Model\ElementoModel;
 
 class PokemonController
 {
@@ -18,6 +19,8 @@ class PokemonController
     {
         
         $model = new PokemonModel();
+        $model_elemento = new ElementoModel();
+        $model_elemento->getAllRows();
 
         if(isset($_GET['id']))
         {
