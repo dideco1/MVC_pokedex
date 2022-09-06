@@ -54,7 +54,7 @@
 
             <?php foreach($model->rows as $item): ?>
             <tr>
-                <td> <b> <a href="/pokemon/delete?id=<?= $item['id'] ?>">X</a> </b> </td>
+                <td> <b> <a href="/elemento/delete?id=<?= $item['id'] ?>">X</a> </b> </td>
                 <td> <b> <?= $item['id'] ?> </b> </td>
                 <td>&nbsp <b> <a href="/pokemon/form?id=<?= $item['id'] ?>"> <?= $item['nome'] ?> </a> </b> &nbsp</td>
 
