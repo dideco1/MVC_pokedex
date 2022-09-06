@@ -55,7 +55,7 @@ class ElementoDAO
         $stmt->bindValue(1, $id);
         $stmt->execute();
 
-        return $stmt->fetchObject("ElementoModel");
+        return $stmt->fetchObject();
     }
     public function delete(int $id)
     {
